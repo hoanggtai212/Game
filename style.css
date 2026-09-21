@@ -5,22 +5,16 @@ body{overflow-x:hidden}
 .map-section{
   position:relative;
   width:100%;
-  height:min(1080px,145vw);
-  min-height:760px;
+  height:min(1000px,130vw);
+  min-height:680px;
   overflow:hidden;
-  background-image:url("assets/world-map.png");
-  background-repeat:no-repeat;
+  margin:0;
+  background:
+    #9eddf6 url("assets/world-map.png")
+    no-repeat;
   background-size:100% auto;
-  background-color:#9eddf6;
 }
-.map-section + .map-section{margin-top:-18px}
-.map-section::after{
-  content:"";
-  position:absolute;
-  left:0;right:0;bottom:0;height:90px;
-  background:linear-gradient(transparent,#a9def6);
-  pointer-events:none;
-}
+.map-section + .map-section{margin-top:-80px;}
 .chapter{
   position:absolute;z-index:5;left:28px;top:20px;
   padding:8px 14px;border-radius:999px;
