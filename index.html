@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skyland Adventure — Chọn màn</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <div class="chapter">Chặng 02 <span>•</span> Bài 5–8</div>
+      <button class="back-btn" id="backBtn" type="button">← Menu</button>
+    </header>
+
+    <section class="map-wrap" aria-label="Bản đồ chọn màn">
+      <img class="map-art" src="assets/map.png" alt="Bản đồ đảo trên mây" />
+
+      <!-- Các nút màn chơi nằm theo % để responsive theo ảnh -->
+      <button class="level level-5 unlocked" data-level="5" style="left:70.2%;top:24.0%" aria-label="Bài 5">
+        <span>5</span>
+        <small>Bài 5</small>
+      </button>
+
+      <button class="level level-6 unlocked" data-level="6" style="left:45.7%;top:46.5%" aria-label="Bài 6">
+        <span>6</span>
+        <small>Bài 6</small>
+      </button>
+
+      <button class="level level-7 unlocked" data-level="7" style="left:48.0%;top:72.2%" aria-label="Bài 7">
+        <span>7</span>
+        <small>Bài 7</small>
+      </button>
+
+      <button class="level level-8 unlocked" data-level="8" style="left:36.7%;top:94.8%" aria-label="Bài 8">
+        <span>8</span>
+        <small>Bài 8</small>
+      </button>
+    </section>
+  </main>
+
+  <div class="modal hidden" id="levelModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="close" id="closeModal" aria-label="Đóng">×</button>
+      <div class="badge">★</div>
+      <h2 id="modalTitle">Bài 5</h2>
+      <p id="modalText">Sẵn sàng khám phá hòn đảo tiếp theo?</p>
+      <button class="play-btn" id="playBtn">Vào bài</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
