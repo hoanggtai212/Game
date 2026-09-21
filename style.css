@@ -14,7 +14,7 @@ body{overflow-x:hidden}
     no-repeat;
   background-size:100% auto;
 }
-.map-section + .map-section{margin-top:-80px;}
+.map-section + .map-section{margin-top:150px;}
 .chapter{
   position:absolute;z-index:5;left:28px;top:20px;
   padding:8px 14px;border-radius:999px;
