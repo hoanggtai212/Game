@@ -2,58 +2,20 @@
 html,body{margin:0;padding:0;background:#a9def6;font-family:"Trebuchet MS","Arial Rounded MT Bold",Arial,sans-serif}
 body{overflow-x:hidden}
 #world{width:min(100%,760px);margin:auto}
-.map-section{
-  position:relative;
-  width:100%;
-  height:min(1000px,130vw);
-  min-height:680px;
-  overflow:hidden;
-  margin:0;
-  background:
-    #9eddf6 url("assets/world-map.png")
-    no-repeat;
-  background-size:100% auto;
-}
-.map-section + .map-section{margin-top:150px;}
-.chapter{
-  position:absolute;z-index:5;left:28px;top:20px;
-  padding:8px 14px;border-radius:999px;
-  background:#fff8df;border:2px solid #d9b25a;
-  color:#654f2c;font-weight:900;font-size:14px;
-  box-shadow:0 4px 10px #476a7a33;
-}
-.level{
-  position:absolute;z-index:6;
-  width:68px;height:68px;transform:translate(-50%,-50%);
-  border:4px solid white;border-radius:50%;
-  background:linear-gradient(145deg,#9a73ef,#673fc4);
-  color:#fff;cursor:pointer;
-  box-shadow:0 0 0 4px #6139b42b,0 7px 14px #49306a4d;
-  transition:.16s ease;
-}
+
+.map-section{position:relative;width:100%;height:900px;overflow:hidden;margin:0;background:#9eddf6 url("assets/world-map.png") center top/100% auto no-repeat}
+.map-section+.map-section{margin-top:90px}
+
+.chapter{position:absolute;z-index:5;left:28px;top:20px;padding:8px 14px;border-radius:999px;background:#fff8df;border:2px solid #d9b25a;color:#654f2c;font-weight:900;font-size:14px;box-shadow:0 4px 10px #476a7a33}
+
+.level{position:absolute;z-index:6;width:68px;height:68px;transform:translate(-50%,-50%);border:4px solid white;border-radius:50%;background:linear-gradient(145deg,#9a73ef,#673fc4);color:#fff;cursor:pointer;box-shadow:0 0 0 4px #6139b42b,0 7px 14px #49306a4d;transition:.16s ease}
 .level:hover{transform:translate(-50%,-50%) scale(1.09);filter:brightness(1.06)}
 .level span{font-size:30px;font-weight:900;text-shadow:0 2px 2px #0003}
-.level small{
-  position:absolute;top:calc(100% + 8px);left:50%;
-  transform:translateX(-50%);white-space:nowrap;
-  padding:6px 12px;border-radius:7px;
-  background:#fff8df;border:2px solid #d9b25a;
-  color:#624b25;font-weight:900;font-size:13px;
-  box-shadow:0 3px 8px #475b4933;
-}
-.level.end small{top:auto;bottom:calc(100% + 8px)}
+.level small{position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);white-space:nowrap;padding:6px 12px;border-radius:7px;background:#fff8df;border:2px solid #d9b25a;color:#624b25;font-weight:900;font-size:13px;box-shadow:0 3px 8px #475b4933}
 
-.modal{
-  position:fixed;inset:0;z-index:20;display:grid;place-items:center;
-  background:#1d2c4770;backdrop-filter:blur(5px);padding:20px
-}
+.modal{position:fixed;inset:0;z-index:20;display:grid;place-items:center;background:#1d2c4770;backdrop-filter:blur(5px);padding:20px}
 .hidden{display:none!important}
-.modal-card{
-  position:relative;width:min(92vw,390px);padding:30px 25px 25px;
-  text-align:center;border:4px solid #dfbd68;border-radius:24px;
-  background:linear-gradient(#fffdf1,#fff0c5);
-  box-shadow:0 20px 50px #263c5a55
-}
+.modal-card{position:relative;width:min(92vw,390px);padding:30px 25px 25px;text-align:center;border:4px solid #dfbd68;border-radius:24px;background:linear-gradient(#fffdf1,#fff0c5);box-shadow:0 20px 50px #263c5a55}
 .close{position:absolute;right:12px;top:7px;border:0;background:none;font-size:30px;color:#765f3d;cursor:pointer}
 .star{margin:auto;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#754bcf;color:#fff;font-size:28px;border:3px solid white;box-shadow:0 0 0 3px #d8b663}
 .modal-card h2{color:#5938a4;margin:12px 0 8px}
@@ -61,9 +23,10 @@ body{overflow-x:hidden}
 .play{border:0;border-radius:999px;padding:12px 28px;background:#7044c9;color:#fff;font-weight:900;font-size:16px;cursor:pointer;box-shadow:0 4px 0 #512d9e}
 
 @media(max-width:520px){
-  .map-section{height:145vw;min-height:680px}
-  .chapter{left:16px;top:12px;font-size:11px;padding:6px 10px}
-  .level{width:58px;height:58px}
-  .level span{font-size:25px}
-  .level small{font-size:11px;padding:5px 9px}
+.map-section{height:760px}
+.map-section+.map-section{margin-top:70px}
+.chapter{left:16px;top:12px;font-size:11px;padding:6px 10px}
+.level{width:58px;height:58px}
+.level span{font-size:25px}
+.level small{font-size:11px;padding:5px 9px}
 }
