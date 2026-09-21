@@ -14,10 +14,6 @@ const chapters=[
 chapters.forEach(chapter=>{
   const section=document.createElement("section");
   section.className="map-section";
-  section.style.backgroundImage='url("assets/world-map.png")';
-  section.style.backgroundRepeat="no-repeat";
-  section.style.backgroundSize="100% auto";
-  section.style.backgroundPosition="center top";
 
   const label=document.createElement("div");
   label.className="chapter";
