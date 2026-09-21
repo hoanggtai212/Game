@@ -4,11 +4,11 @@ const modalTitle=document.getElementById("modalTitle");
 let selected=null;
 
 const chapters=[
-  {name:"Chặng 02",range:"Bài 5–7",from:5,positions:[[55,34],[51,51],[48,68]]},
-  {name:"Chặng 03",range:"Bài 8–10",from:8,positions:[[55,34],[51,51],[48,68]]},
-  {name:"Chặng 04",range:"Bài 11–13",from:11,positions:[[55,34],[51,51],[48,68]]},
-  {name:"Chặng 05",range:"Bài 14–16",from:14,positions:[[55,34],[51,51],[48,68]]},
-  {name:"Chặng 06",range:"Bài 17–19",from:17,positions:[[55,34],[51,51],[48,68]]}
+  {name:"Chặng 02",range:"Bài 5–7",from:5,positions:[[55,34],[51,50],[47,66]]},
+  {name:"Chặng 03",range:"Bài 8–10",from:8,positions:[[55,34],[51,50],[47,66]]},
+  {name:"Chặng 04",range:"Bài 11–13",from:11,positions:[[55,34],[51,50],[47,66]]},
+  {name:"Chặng 05",range:"Bài 14–16",from:14,positions:[[55,34],[51,50],[47,66]]},
+  {name:"Chặng 06",range:"Bài 17–19",from:17,positions:[[55,34],[51,50],[47,66]]}
 ];
 
 chapters.forEach(chapter=>{
